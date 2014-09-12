@@ -1,0 +1,81 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Restaurant Reviews</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+         <link href="./myStyle.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="java.js"></script>
+    </head>
+    <body>
+        
+        <div class="header"><img src="../Restaurant-Tables-001-1.jpg" width="400" alt="Restaurant-Tables-001-1"/>Restaurants Review</div>
+      
+        <form onSubmit="return confirmSubmit()">
+            <fieldset>
+                <legend>Restaurant Details</legend>
+                Restaurant name:<br/><input name="rName" id="rName"><br/>
+                City:<br/><input name="city" id="city"><br/>
+                State/Territory<br/>
+                <select name="state" id="state">
+                    <option value="1">Specify state or territory</option>
+                    <option value="2">Australian Capital Territory (ACT)</option>
+                    <option value="3">New South Wales (NSW)</option>
+                    <option value="4">Northern Territory (NT)</option>
+                    <option value="5">Queensland (QLD)</option>
+                    <option value="6">South Australia (SA)</option>
+                    <option value="7">Tasmania (TAS)</option>
+                    <option value="8">Victoria (VIC)</option>
+                    <option value="9">Western Australia (WA)</option>
+                </select>
+                <br/>Postcode<br/><input type="number" name="postNum" id="postNum">
+            </fieldset>
+            <fieldset>
+                <legend>Details of the cuisine</legend>
+                Cuisine: <br/>
+                <select name="cuisine" id="cuisine">
+                    
+                    <option value="0">Specify cuisine</option>
+                    <option value="1">Aussie</option>
+                    <option value="2">Chinese</option>
+                    <option value="3">Greek</option>
+                    <option value="4">Italian</option>
+                    <option value="5">Thai</option>
+                </select><br/>
+                Cost for a typical main:<br/><input name="cost" id="cost">
+            </fieldset>
+            <fieldset>
+                <legend>Ratings</legend>
+            Please rate your experience at this restaurant for the following aspects.<br/>
+            (Ratings should be numeric values in the 0.0 to 10.0)<br/><br/>
+            <table class="ratingTable">
+               <tbody>
+                    <tr>
+                        <td >Food:<br/> <input name="foodRating" id="foodRating"></td>
+                        <td>Service:<br/><input name="serviceRating" id="serviceRating"></td>
+                    </tr>
+                    <tr>
+                        <td>Ambience:<br/><input name="amRating" id="amRating"></td>
+                        <td>Value: <br/><input name="valueRating" id="valueRating"></td>
+                    </tr>
+                </tbody>
+            </table>
+            </fieldset>
+            <fieldset>
+                <legend>Your review</legend>
+                Date of your last visit(dd-mm-yyyy):<input name="date" id="date"><br/>
+                Your comments<br/> 
+                <input type="text" class="comment" name="comments" id="comments">
+            </fieldset>
+            <fieldset>
+                <legend>Action</legend>
+                <input type="button" value="Submit" onClick="confirmSubmit()"/>
+            </fieldset>
+            
+
+        </form>
+    </body>
+</html>

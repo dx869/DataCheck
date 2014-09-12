@@ -1,0 +1,24 @@
+/* 
+    Document   : myStyle
+    Created on : Aug 23, 2012, 11:23:04 AM
+    Author     : Administrator
+    Description:
+        Purpose of the stylesheet follows.
+*/
+body{
+  size: 30px;
+   width: 900px;
+   margin: 0px auto;
+  background-color: lightblue;
+  /* color: lightsalmon;*/
+}
+.header{
+    font-size: 40px;
+}
+.ratingTable{
+    width: 700px;    
+}
+.comment{
+    width:500px;
+    height: 150px;
+}
